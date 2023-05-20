@@ -42,5 +42,19 @@ namespace WindowsFormsApp1
             txtUserName.Clear();
             txtPassword.Clear();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if(txtUserName.Text == "u" && txtPassword.Text == "u")
+            {
+                Administrator am = new Administrator();
+                am.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Wrong username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
