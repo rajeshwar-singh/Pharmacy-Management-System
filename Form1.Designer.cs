@@ -179,7 +179,7 @@ namespace WindowsFormsApp1
             this.btnLogin.HoverState.Parent = this.btnLogin;
             this.btnLogin.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.Image")));
             this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.KatakanaHalf;
-            this.btnLogin.Location = new System.Drawing.Point(866, 540);
+            this.btnLogin.Location = new System.Drawing.Point(870, 540);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
             this.btnLogin.Size = new System.Drawing.Size(146, 36);
@@ -230,6 +230,7 @@ namespace WindowsFormsApp1
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

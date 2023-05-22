@@ -58,16 +58,50 @@
     <Compile Include="Administrator.Designer.cs">
       <DependentUpon>Administrator.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administrator_UserControl\UserControl_AddUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administrator_UserControl\UserControl_AddUser.Designer.cs">
+      <DependentUpon>UserControl_AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator_UserControl\UserControl_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administrator_UserControl\UserControl_Dashboard.Designer.cs">
+      <DependentUpon>UserControl_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator_UserControl\UserControl_ViewUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administrator_UserControl\UserControl_ViewUser.Designer.cs">
+      <DependentUpon>UserControl_ViewUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Function.cs" />
+    <Compile Include="Pharmacist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist.Designer.cs">
+      <DependentUpon>Pharmacist.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Administrator.resx">
       <DependentUpon>Administrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator_UserControl\UserControl_AddUser.resx">
+      <DependentUpon>UserControl_AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator_UserControl\UserControl_Dashboard.resx">
+      <DependentUpon>UserControl_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator_UserControl\UserControl_ViewUser.resx">
+      <DependentUpon>UserControl_ViewUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -94,5 +128,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
