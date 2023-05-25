@@ -41,14 +41,14 @@ namespace WindowsFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.userControl_Profile1 = new WindowsFormsApp1.Administrator_UserControl.UserControl_Profile();
-            this.userControl_ViewUser1 = new WindowsFormsApp1.Administrator_UserControl.UserControl_ViewUser();
-            this.userControl_AddUser1 = new WindowsFormsApp1.Administrator_UserControl.UserControl_AddUser();
-            this.userControl_Dashboard1 = new WindowsFormsApp1.Administrator_UserControl.UserControl_Dashboard();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.userControl_Profile1 = new WindowsFormsApp1.Administrator_UserControl.UserControl_Profile();
+            this.userControl_ViewUser1 = new WindowsFormsApp1.Administrator_UserControl.UserControl_ViewUser();
+            this.userControl_AddUser1 = new WindowsFormsApp1.Administrator_UserControl.UserControl_AddUser();
+            this.userControl_Dashboard1 = new WindowsFormsApp1.Administrator_UserControl.UserControl_Dashboard();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -69,6 +69,7 @@ namespace WindowsFormsApp1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(275, 730);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // AdminName
             // 
@@ -219,9 +220,26 @@ namespace WindowsFormsApp1
             this.panel2.Size = new System.Drawing.Size(1089, 730);
             this.panel2.TabIndex = 1;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel2;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.panel2;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this.panel2;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.TargetControl = this.panel2;
+            // 
             // userControl_Profile1
             // 
             this.userControl_Profile1.BackColor = System.Drawing.Color.White;
+            this.userControl_Profile1.ForeColor = System.Drawing.Color.Black;
             this.userControl_Profile1.Location = new System.Drawing.Point(1, 2);
             this.userControl_Profile1.Name = "userControl_Profile1";
             this.userControl_Profile1.Size = new System.Drawing.Size(1085, 726);
@@ -253,22 +271,6 @@ namespace WindowsFormsApp1
             this.userControl_Dashboard1.Name = "userControl_Dashboard1";
             this.userControl_Dashboard1.Size = new System.Drawing.Size(1089, 730);
             this.userControl_Dashboard1.TabIndex = 0;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.TargetControl = this.panel2;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this.panel2;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.TargetControl = this.panel2;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.TargetControl = this.panel2;
             // 
             // Administrator
             // 
