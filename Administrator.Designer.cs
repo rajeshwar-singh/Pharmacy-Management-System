@@ -41,12 +41,14 @@ namespace WindowsFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.userControl_Profile1 = new WindowsFormsApp1.Administrator_UserControl.UserControl_Profile();
             this.userControl_ViewUser1 = new WindowsFormsApp1.Administrator_UserControl.UserControl_ViewUser();
             this.userControl_AddUser1 = new WindowsFormsApp1.Administrator_UserControl.UserControl_AddUser();
             this.userControl_Dashboard1 = new WindowsFormsApp1.Administrator_UserControl.UserControl_Dashboard();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -208,6 +210,7 @@ namespace WindowsFormsApp1
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.userControl_Profile1);
             this.panel2.Controls.Add(this.userControl_ViewUser1);
             this.panel2.Controls.Add(this.userControl_AddUser1);
             this.panel2.Controls.Add(this.userControl_Dashboard1);
@@ -215,6 +218,14 @@ namespace WindowsFormsApp1
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1089, 730);
             this.panel2.TabIndex = 1;
+            // 
+            // userControl_Profile1
+            // 
+            this.userControl_Profile1.BackColor = System.Drawing.Color.White;
+            this.userControl_Profile1.Location = new System.Drawing.Point(1, 2);
+            this.userControl_Profile1.Name = "userControl_Profile1";
+            this.userControl_Profile1.Size = new System.Drawing.Size(1085, 726);
+            this.userControl_Profile1.TabIndex = 3;
             // 
             // userControl_ViewUser1
             // 
@@ -255,6 +266,10 @@ namespace WindowsFormsApp1
             // 
             this.guna2Elipse3.TargetControl = this.panel2;
             // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.TargetControl = this.panel2;
+            // 
             // Administrator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -293,5 +308,7 @@ namespace WindowsFormsApp1
         private Administrator_UserControl.UserControl_AddUser userControl_AddUser1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Administrator_UserControl.UserControl_ViewUser userControl_ViewUser1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private Administrator_UserControl.UserControl_Profile userControl_Profile1;
     }
 }

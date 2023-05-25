@@ -29,13 +29,15 @@ namespace WindowsFormsApp1
             AdminName.Text = username;
             user = username;
             userControl_ViewUser1.ID = ID;
+            userControl_Profile1.ID = ID;
         }
 
         
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-
+            userControl_Profile1.Visible = true;
+            userControl_Profile1.BringToFront();
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -73,6 +75,7 @@ namespace WindowsFormsApp1
             userControl_Dashboard1.Visible = false;
             userControl_AddUser1.Visible = false;
             userControl_ViewUser1.Visible = false;
+            userControl_Profile1.Visible = false;
             btnDashboard.PerformClick();
         }
 

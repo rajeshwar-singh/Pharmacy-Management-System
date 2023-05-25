@@ -70,6 +70,12 @@
     <Compile Include="Administrator_UserControl\UserControl_Dashboard.Designer.cs">
       <DependentUpon>UserControl_Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administrator_UserControl\UserControl_Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administrator_UserControl\UserControl_Profile.Designer.cs">
+      <DependentUpon>UserControl_Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Administrator_UserControl\UserControl_ViewUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrator_UserControl\UserControl_Dashboard.resx">
       <DependentUpon>UserControl_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator_UserControl\UserControl_Profile.resx">
+      <DependentUpon>UserControl_Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrator_UserControl\UserControl_ViewUser.resx">
       <DependentUpon>UserControl_ViewUser.cs</DependentUpon>
