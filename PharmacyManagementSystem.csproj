@@ -108,6 +108,12 @@
     <Compile Include="Pharmacist_UserControl\pUserControl_Dashboard.Designer.cs">
       <DependentUpon>pUserControl_Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pharmacist_UserControl\pUserControl_modifyMedsicine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacist_UserControl\pUserControl_modifyMedsicine.Designer.cs">
+      <DependentUpon>pUserControl_modifyMedsicine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pharmacist_UserControl\pUserControl_viewMedicines.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pharmacist_UserControl\pUserControl_Dashboard.resx">
       <DependentUpon>pUserControl_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist_UserControl\pUserControl_modifyMedsicine.resx">
+      <DependentUpon>pUserControl_modifyMedsicine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pharmacist_UserControl\pUserControl_viewMedicines.resx">
       <DependentUpon>pUserControl_viewMedicines.cs</DependentUpon>

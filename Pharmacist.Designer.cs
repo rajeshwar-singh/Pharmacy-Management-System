@@ -39,15 +39,17 @@ namespace WindowsFormsApp1
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddMedicine = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnModifyMedicine = new Guna.UI2.WinForms.Guna2Button();
             this.btnViewMedicines = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.pUserControl_viewMedicines1 = new WindowsFormsApp1.Pharmacist_UserControl.pUserControl_viewMedicines();
             this.pUserControl_addMedicine1 = new WindowsFormsApp1.Pharmacist_UserControl.pUserControl_addMedicine();
             this.pUserControl_Dashboard1 = new WindowsFormsApp1.Pharmacist_UserControl.pUserControl_Dashboard();
-            this.pUserControl_viewMedicines1 = new WindowsFormsApp1.Pharmacist_UserControl.pUserControl_viewMedicines();
+            this.pUserControl_modifyMedsicine1 = new WindowsFormsApp1.Pharmacist_UserControl.pUserControl_modifyMedsicine();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -63,7 +65,7 @@ namespace WindowsFormsApp1
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.guna2Button5);
             this.panel1.Controls.Add(this.btnAddMedicine);
-            this.panel1.Controls.Add(this.guna2Button4);
+            this.panel1.Controls.Add(this.btnModifyMedicine);
             this.panel1.Controls.Add(this.btnViewMedicines);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -196,26 +198,26 @@ namespace WindowsFormsApp1
             this.btnAddMedicine.Text = "Add Medicine";
             this.btnAddMedicine.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // guna2Button4
+            // btnModifyMedicine
             // 
-            this.guna2Button4.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.Image")));
-            this.guna2Button4.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button4.Location = new System.Drawing.Point(13, 453);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(263, 45);
-            this.guna2Button4.TabIndex = 3;
-            this.guna2Button4.Text = "Modify Medicine";
-            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
+            this.btnModifyMedicine.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnModifyMedicine.CheckedState.Parent = this.btnModifyMedicine;
+            this.btnModifyMedicine.CustomImages.Parent = this.btnModifyMedicine;
+            this.btnModifyMedicine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
+            this.btnModifyMedicine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModifyMedicine.ForeColor = System.Drawing.Color.White;
+            this.btnModifyMedicine.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnModifyMedicine.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnModifyMedicine.HoverState.Parent = this.btnModifyMedicine;
+            this.btnModifyMedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnModifyMedicine.Image")));
+            this.btnModifyMedicine.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnModifyMedicine.Location = new System.Drawing.Point(13, 453);
+            this.btnModifyMedicine.Name = "btnModifyMedicine";
+            this.btnModifyMedicine.ShadowDecoration.Parent = this.btnModifyMedicine;
+            this.btnModifyMedicine.Size = new System.Drawing.Size(263, 45);
+            this.btnModifyMedicine.TabIndex = 3;
+            this.btnModifyMedicine.Text = "Modify Medicine";
+            this.btnModifyMedicine.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // btnViewMedicines
             // 
@@ -240,6 +242,7 @@ namespace WindowsFormsApp1
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.pUserControl_modifyMedsicine1);
             this.panel2.Controls.Add(this.pUserControl_viewMedicines1);
             this.panel2.Controls.Add(this.pUserControl_addMedicine1);
             this.panel2.Controls.Add(this.pUserControl_Dashboard1);
@@ -260,6 +263,19 @@ namespace WindowsFormsApp1
             // 
             this.guna2Elipse3.TargetControl = this.panel2;
             // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.TargetControl = this.panel2;
+            // 
+            // pUserControl_viewMedicines1
+            // 
+            this.pUserControl_viewMedicines1.BackColor = System.Drawing.Color.White;
+            this.pUserControl_viewMedicines1.Location = new System.Drawing.Point(0, 0);
+            this.pUserControl_viewMedicines1.Name = "pUserControl_viewMedicines1";
+            this.pUserControl_viewMedicines1.Size = new System.Drawing.Size(1104, 770);
+            this.pUserControl_viewMedicines1.TabIndex = 2;
+            this.pUserControl_viewMedicines1.Load += new System.EventHandler(this.pUserControl_viewMedicines1_Load);
+            // 
             // pUserControl_addMedicine1
             // 
             this.pUserControl_addMedicine1.BackColor = System.Drawing.Color.White;
@@ -276,14 +292,13 @@ namespace WindowsFormsApp1
             this.pUserControl_Dashboard1.Size = new System.Drawing.Size(1104, 765);
             this.pUserControl_Dashboard1.TabIndex = 0;
             // 
-            // pUserControl_viewMedicines1
+            // pUserControl_modifyMedsicine1
             // 
-            this.pUserControl_viewMedicines1.BackColor = System.Drawing.Color.White;
-            this.pUserControl_viewMedicines1.Location = new System.Drawing.Point(0, 0);
-            this.pUserControl_viewMedicines1.Name = "pUserControl_viewMedicines1";
-            this.pUserControl_viewMedicines1.Size = new System.Drawing.Size(1104, 770);
-            this.pUserControl_viewMedicines1.TabIndex = 2;
-            this.pUserControl_viewMedicines1.Load += new System.EventHandler(this.pUserControl_viewMedicines1_Load);
+            this.pUserControl_modifyMedsicine1.BackColor = System.Drawing.Color.White;
+            this.pUserControl_modifyMedsicine1.Location = new System.Drawing.Point(0, 0);
+            this.pUserControl_modifyMedsicine1.Name = "pUserControl_modifyMedsicine1";
+            this.pUserControl_modifyMedsicine1.Size = new System.Drawing.Size(1104, 767);
+            this.pUserControl_modifyMedsicine1.TabIndex = 3;
             // 
             // Pharmacist
             // 
@@ -317,7 +332,7 @@ namespace WindowsFormsApp1
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button btnAddMedicine;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button btnModifyMedicine;
         private Guna.UI2.WinForms.Guna2Button btnViewMedicines;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Pharmacist_UserControl.pUserControl_Dashboard pUserControl_Dashboard1;
@@ -325,5 +340,7 @@ namespace WindowsFormsApp1
         private Pharmacist_UserControl.pUserControl_addMedicine pUserControl_addMedicine1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Pharmacist_UserControl.pUserControl_viewMedicines pUserControl_viewMedicines1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private Pharmacist_UserControl.pUserControl_modifyMedsicine pUserControl_modifyMedsicine1;
     }
 }
