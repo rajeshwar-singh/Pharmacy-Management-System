@@ -19,7 +19,8 @@ namespace WindowsFormsApp1
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-
+            pUserControl_viewMedicines1.Visible = true;
+            pUserControl_viewMedicines1.BringToFront();
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
@@ -29,12 +30,14 @@ namespace WindowsFormsApp1
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            pUserControl_Dashboard1.Visible = true;
+            pUserControl_Dashboard1.BringToFront();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-
+            pUserControl_addMedicine1.Visible = true;
+            pUserControl_addMedicine1.BringToFront();
         }
 
         private void guna2Button5_Click(object sender, EventArgs e)
@@ -53,6 +56,19 @@ namespace WindowsFormsApp1
             fm.Show();
 
             this.Hide();
+        }
+
+        private void Pharmacist_Load(object sender, EventArgs e)
+        {
+            pUserControl_Dashboard1.Visible = false;
+            pUserControl_addMedicine1.Visible = false;
+            pUserControl_viewMedicines1.Visible = false;
+            btnDashboard.PerformClick();
+        }
+
+        private void pUserControl_viewMedicines1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

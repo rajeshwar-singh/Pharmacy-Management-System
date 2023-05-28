@@ -41,6 +41,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -95,6 +96,24 @@
     <Compile Include="Pharmacist.Designer.cs">
       <DependentUpon>Pharmacist.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pharmacist_UserControl\pUserControl_addMedicine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacist_UserControl\pUserControl_addMedicine.Designer.cs">
+      <DependentUpon>pUserControl_addMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist_UserControl\pUserControl_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacist_UserControl\pUserControl_Dashboard.Designer.cs">
+      <DependentUpon>pUserControl_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist_UserControl\pUserControl_viewMedicines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacist_UserControl\pUserControl_viewMedicines.Designer.cs">
+      <DependentUpon>pUserControl_viewMedicines.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Administrator.resx">
@@ -117,6 +136,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pharmacist.resx">
       <DependentUpon>Pharmacist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist_UserControl\pUserControl_addMedicine.resx">
+      <DependentUpon>pUserControl_addMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist_UserControl\pUserControl_Dashboard.resx">
+      <DependentUpon>pUserControl_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist_UserControl\pUserControl_viewMedicines.resx">
+      <DependentUpon>pUserControl_viewMedicines.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
