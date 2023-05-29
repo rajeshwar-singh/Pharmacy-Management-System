@@ -192,7 +192,7 @@ namespace WindowsFormsApp1.Pharmacist_UserControl
             this.txtManufacturingDate.BorderThickness = 1;
             this.txtManufacturingDate.CheckedState.Parent = this.txtManufacturingDate;
             this.txtManufacturingDate.FillColor = System.Drawing.Color.Transparent;
-            this.txtManufacturingDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.txtManufacturingDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtManufacturingDate.HoverState.Parent = this.txtManufacturingDate;
             this.txtManufacturingDate.Location = new System.Drawing.Point(113, 549);
             this.txtManufacturingDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -219,7 +219,7 @@ namespace WindowsFormsApp1.Pharmacist_UserControl
             this.txtExpireDate.BorderThickness = 1;
             this.txtExpireDate.CheckedState.Parent = this.txtExpireDate;
             this.txtExpireDate.FillColor = System.Drawing.Color.Transparent;
-            this.txtExpireDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.txtExpireDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtExpireDate.HoverState.Parent = this.txtExpireDate;
             this.txtExpireDate.Location = new System.Drawing.Point(646, 165);
             this.txtExpireDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);

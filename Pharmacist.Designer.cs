@@ -37,19 +37,21 @@ namespace WindowsFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMedValidityCheck = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddMedicine = new Guna.UI2.WinForms.Guna2Button();
             this.btnModifyMedicine = new Guna.UI2.WinForms.Guna2Button();
             this.btnViewMedicines = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pUserControl_modifyMedsicine1 = new WindowsFormsApp1.Pharmacist_UserControl.pUserControl_modifyMedsicine();
+            this.pUserControl_viewMedicines1 = new WindowsFormsApp1.Pharmacist_UserControl.pUserControl_viewMedicines();
+            this.pUserControl_addMedicine1 = new WindowsFormsApp1.Pharmacist_UserControl.pUserControl_addMedicine();
+            this.pUserControl_Dashboard1 = new WindowsFormsApp1.Pharmacist_UserControl.pUserControl_Dashboard();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.pUserControl_viewMedicines1 = new WindowsFormsApp1.Pharmacist_UserControl.pUserControl_viewMedicines();
-            this.pUserControl_addMedicine1 = new WindowsFormsApp1.Pharmacist_UserControl.pUserControl_addMedicine();
-            this.pUserControl_Dashboard1 = new WindowsFormsApp1.Pharmacist_UserControl.pUserControl_Dashboard();
-            this.pUserControl_modifyMedsicine1 = new WindowsFormsApp1.Pharmacist_UserControl.pUserControl_modifyMedsicine();
+            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.pUserControl1_MedicineValidityCheck1 = new WindowsFormsApp1.Pharmacist_UserControl.pUserControl1_MedicineValidityCheck();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -63,7 +65,7 @@ namespace WindowsFormsApp1
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.guna2Button6);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.guna2Button5);
+            this.panel1.Controls.Add(this.btnMedValidityCheck);
             this.panel1.Controls.Add(this.btnAddMedicine);
             this.panel1.Controls.Add(this.btnModifyMedicine);
             this.panel1.Controls.Add(this.btnViewMedicines);
@@ -156,26 +158,26 @@ namespace WindowsFormsApp1
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // guna2Button5
+            // btnMedValidityCheck
             // 
-            this.guna2Button5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
-            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
-            this.guna2Button5.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button5.Location = new System.Drawing.Point(13, 521);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(263, 45);
-            this.guna2Button5.TabIndex = 4;
-            this.guna2Button5.Text = "Medicine Validity Check";
-            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
+            this.btnMedValidityCheck.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnMedValidityCheck.CheckedState.Parent = this.btnMedValidityCheck;
+            this.btnMedValidityCheck.CustomImages.Parent = this.btnMedValidityCheck;
+            this.btnMedValidityCheck.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
+            this.btnMedValidityCheck.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMedValidityCheck.ForeColor = System.Drawing.Color.White;
+            this.btnMedValidityCheck.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnMedValidityCheck.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnMedValidityCheck.HoverState.Parent = this.btnMedValidityCheck;
+            this.btnMedValidityCheck.Image = ((System.Drawing.Image)(resources.GetObject("btnMedValidityCheck.Image")));
+            this.btnMedValidityCheck.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnMedValidityCheck.Location = new System.Drawing.Point(13, 521);
+            this.btnMedValidityCheck.Name = "btnMedValidityCheck";
+            this.btnMedValidityCheck.ShadowDecoration.Parent = this.btnMedValidityCheck;
+            this.btnMedValidityCheck.Size = new System.Drawing.Size(263, 45);
+            this.btnMedValidityCheck.TabIndex = 4;
+            this.btnMedValidityCheck.Text = "Medicine Validity Check";
+            this.btnMedValidityCheck.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // btnAddMedicine
             // 
@@ -242,6 +244,7 @@ namespace WindowsFormsApp1
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.pUserControl1_MedicineValidityCheck1);
             this.panel2.Controls.Add(this.pUserControl_modifyMedsicine1);
             this.panel2.Controls.Add(this.pUserControl_viewMedicines1);
             this.panel2.Controls.Add(this.pUserControl_addMedicine1);
@@ -251,21 +254,13 @@ namespace WindowsFormsApp1
             this.panel2.Size = new System.Drawing.Size(1102, 768);
             this.panel2.TabIndex = 1;
             // 
-            // guna2Elipse1
+            // pUserControl_modifyMedsicine1
             // 
-            this.guna2Elipse1.TargetControl = this.panel2;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this.panel2;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.TargetControl = this.panel2;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.TargetControl = this.panel2;
+            this.pUserControl_modifyMedsicine1.BackColor = System.Drawing.Color.White;
+            this.pUserControl_modifyMedsicine1.Location = new System.Drawing.Point(0, 0);
+            this.pUserControl_modifyMedsicine1.Name = "pUserControl_modifyMedsicine1";
+            this.pUserControl_modifyMedsicine1.Size = new System.Drawing.Size(1104, 767);
+            this.pUserControl_modifyMedsicine1.TabIndex = 3;
             // 
             // pUserControl_viewMedicines1
             // 
@@ -292,13 +287,33 @@ namespace WindowsFormsApp1
             this.pUserControl_Dashboard1.Size = new System.Drawing.Size(1104, 765);
             this.pUserControl_Dashboard1.TabIndex = 0;
             // 
-            // pUserControl_modifyMedsicine1
+            // guna2Elipse1
             // 
-            this.pUserControl_modifyMedsicine1.BackColor = System.Drawing.Color.White;
-            this.pUserControl_modifyMedsicine1.Location = new System.Drawing.Point(0, 0);
-            this.pUserControl_modifyMedsicine1.Name = "pUserControl_modifyMedsicine1";
-            this.pUserControl_modifyMedsicine1.Size = new System.Drawing.Size(1104, 767);
-            this.pUserControl_modifyMedsicine1.TabIndex = 3;
+            this.guna2Elipse1.TargetControl = this.panel2;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.panel2;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this.panel2;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.TargetControl = this.panel2;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.TargetControl = this.panel2;
+            // 
+            // pUserControl1_MedicineValidityCheck1
+            // 
+            this.pUserControl1_MedicineValidityCheck1.BackColor = System.Drawing.Color.White;
+            this.pUserControl1_MedicineValidityCheck1.Location = new System.Drawing.Point(0, 1);
+            this.pUserControl1_MedicineValidityCheck1.Name = "pUserControl1_MedicineValidityCheck1";
+            this.pUserControl1_MedicineValidityCheck1.Size = new System.Drawing.Size(1102, 764);
+            this.pUserControl1_MedicineValidityCheck1.TabIndex = 4;
             // 
             // Pharmacist
             // 
@@ -330,7 +345,7 @@ namespace WindowsFormsApp1
         private Guna.UI2.WinForms.Guna2Button btnDashboard;
         private Guna.UI2.WinForms.Guna2Button profile_btnLogout;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2Button btnMedValidityCheck;
         private Guna.UI2.WinForms.Guna2Button btnAddMedicine;
         private Guna.UI2.WinForms.Guna2Button btnModifyMedicine;
         private Guna.UI2.WinForms.Guna2Button btnViewMedicines;
@@ -342,5 +357,7 @@ namespace WindowsFormsApp1
         private Pharmacist_UserControl.pUserControl_viewMedicines pUserControl_viewMedicines1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private Pharmacist_UserControl.pUserControl_modifyMedsicine pUserControl_modifyMedsicine1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
+        private Pharmacist_UserControl.pUserControl1_MedicineValidityCheck pUserControl1_MedicineValidityCheck1;
     }
 }
