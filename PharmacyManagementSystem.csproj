@@ -83,6 +83,7 @@
     <Compile Include="Administrator_UserControl\UserControl_ViewUser.Designer.cs">
       <DependentUpon>UserControl_ViewUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="DGVPrinter.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +102,12 @@
     </Compile>
     <Compile Include="Pharmacist_UserControl\pUserControl1_MedicineValidityCheck.Designer.cs">
       <DependentUpon>pUserControl1_MedicineValidityCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist_UserControl\pUserControl1_SellMedicine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacist_UserControl\pUserControl1_SellMedicine.Designer.cs">
+      <DependentUpon>pUserControl1_SellMedicine.cs</DependentUpon>
     </Compile>
     <Compile Include="Pharmacist_UserControl\pUserControl_addMedicine.cs">
       <SubType>UserControl</SubType>
@@ -151,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pharmacist_UserControl\pUserControl1_MedicineValidityCheck.resx">
       <DependentUpon>pUserControl1_MedicineValidityCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist_UserControl\pUserControl1_SellMedicine.resx">
+      <DependentUpon>pUserControl1_SellMedicine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pharmacist_UserControl\pUserControl_addMedicine.resx">
       <DependentUpon>pUserControl_addMedicine.cs</DependentUpon>

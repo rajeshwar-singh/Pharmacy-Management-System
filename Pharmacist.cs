@@ -49,7 +49,8 @@ namespace WindowsFormsApp1
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-
+            pUserControl1_SellMedicine1.Visible = true;
+            pUserControl1_SellMedicine1.BringToFront();
         }
 
         private void guna2Button7_Click(object sender, EventArgs e)
@@ -66,7 +67,8 @@ namespace WindowsFormsApp1
             pUserControl_addMedicine1.Visible = false;
             pUserControl_viewMedicines1.Visible = false;
             pUserControl_modifyMedsicine1.Visible = false;
-            pUserControl1_MedicineValidityCheck1.Visible = false; 
+            pUserControl1_MedicineValidityCheck1.Visible = false;
+            pUserControl1_SellMedicine1.Visible = false;
             btnDashboard.PerformClick();
         }
 
